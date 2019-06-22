@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/get1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET 1"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/get2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET 2"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POST"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/put"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUT"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/patch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PATCH"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/second_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="RESULT"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="197dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error : "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/error_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="don't receive"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code_layout"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code : "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/code_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="don't receive"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="236dp"
+        android:text="고속버스 터미널 명 : " />
+
+    <TextView
+        android:id="@+id/cor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt1"
+        android:layout_toEndOf="@+id/txt1"
+        android:text="don't receive" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="고속버스 터미널 ID : " />
+
+    <TextView
+        android:id="@+id/cor_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/txt1"
+        android:text="don't receive" />
+
+
+</RelativeLayout>
